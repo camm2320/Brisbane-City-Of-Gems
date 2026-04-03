@@ -1,0 +1,634 @@
+/*Main CSS*/
+body{
+    margin:0;
+    padding:0;
+}
+.indexBody{
+    background-color: #F15584;
+}
+
+
+
+/*NAV BAR*/
+.nav-flex-container{
+    display:flex;
+    background-color:#FB62D7;
+    justify-content: space-around;
+    height:auto;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 10px 0;
+    margin-bottom: 15px;
+}
+.navButtons {
+    flex: 1 1 150px;          
+    display: flex;
+    justify-content: center;
+}
+.navImage{
+    width: 100%;               
+  max-width: 200px;          
+  height: auto;              
+  object-fit: contain;
+}
+
+.navButtons h2 {
+    color: white;             /* white text */
+    font-size: 1rem;          /* adjust size as needed */
+    margin-top: 8px;          /* small space between image and text */
+    text-align: center;
+    font-family: 'Comfortaa', sans-serif; /* matches site font */
+}
+
+/* Visually hidden text for accessibility */
+.visually-hidden {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.navButtons a.active h2 {
+    color: #ff6600; 
+}
+.navButtons a.active {
+    border-bottom: 2px solid #ff6600; 
+}
+
+
+
+/*Index.html*/
+    /*Top Index Section - Image and title*/
+    .indexTopImage{
+        width:100%;
+        height:auto;
+        display:block;
+        object-fit:cover;
+        margin:15px 0;
+    }
+    .imageDivider, .imageDivider2 {
+        width:100%;
+        display:block;
+        object-fit:cover;
+    }
+
+    .imageDivider2 {
+       margin:25px 0 35px 0;
+    }
+   
+    
+    .LineDivider-long{
+    margin: 20px auto;
+    border:none; 
+    height:2px; 
+    background-color:black; 
+    width:90%;
+    }
+    .LineDivider-short{
+      border:none; 
+      height:2px; 
+      background-color:black; 
+      width:70%;
+    }
+    .indexText{
+        text-align: center;
+        font-size: 3vh;
+        font-size:5vw;
+        font-family: 'Comfortaa', Arial, cursive;
+        padding: 15px;
+    }
+    h1{
+        font-family: 'Comfortaa', Arial, cursive;
+        font-size: 2rem;
+        text-align: center;
+        padding:10px;
+        width:90%;
+        color:rgb(255, 227, 232);
+        
+    }
+
+    /*Wall of Inspiration*/
+        /*Top image and background section*/
+    .wall-title {
+  align-items: center;
+  justify-content: center;
+  background-image: url(Images/TeensStanding.jpeg);
+  background-size: cover;
+  background-position: center;
+  width:100%;
+  height: 20vh;
+  max-height:200px;
+  display: flex;
+  min-height: 100px;                  
+  max-height: 300px;
+  margin: 30px 0px;
+}
+.wall-title h2{
+    background-color: rgba(0, 0, 0, 0.591);
+    color:white;
+    text-align:center;
+    font-size:3vh;
+    margin:10px;
+    font-family: 'Comfortaa', Arial, cursive;
+}
+        /*Image gallery*/
+    .wall-flex-container, .wall-flex-container2, .wall-flex-container3{
+  display: flex;
+  flex-wrap: wrap;               
+ justify-content: center;
+  align-items: center;
+  background-color: pink;
+  gap: 10px; 
+   width: 100%;
+  box-sizing: border-box;                  
+  padding: 5px;
+  margin: 20px 0;
+}
+.wall-image-box, .wall-image-box2, .wall-image-box3 {
+  flex: 1 1 calc(33.33% - 20px);
+  max-width: 350px;
+  aspect-ratio: 1 / 1;         
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid hotpink;
+  border-radius: 10px;
+  box-sizing: border-box;
+   overflow: hidden;
+}
+
+@media (max-width: 800px) {
+  .wall-image-box {
+    flex: 1 1 calc(45% - 20px);
+  }
+}
+@media (max-width: 500px) {
+  .wall-image-box {
+    flex: 1 1 100%;
+  }
+}
+
+.wall-image, .wall-image2{
+ width: 350px;
+  height:350px;
+ object-fit: cover;
+}
+
+/*Directory Buttons - eateries and activities*/
+.index-buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 90%;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.index-button1, .index-button2 {
+  display: flex;
+  align-items: center; 
+  padding: 10px;
+  border-radius: 20px;
+  max-width: 600px;
+  border: solid black 4px; 
+  width:90%;
+  gap: 25px;
+}
+.index-button1{
+background-color: #FAB832;
+}
+
+.index-button2{
+background-color: #D0559E;
+}
+
+
+/* Note the dot — you missed it before */
+.index-button-image {
+  width: 150px;
+  height: 130px;
+}
+
+.index-button1 h3, .index-button2 h3  {
+  color: white;
+  margin: 0;
+  font-size: 4vh;
+  font-size: 5vw;
+  font-family: 'Comfortaa', Arial, cursive;
+  word-wrap: break-word;
+  text-align: center;
+  white-space: normal;
+}
+
+
+/*EATERIES PAGE*/
+.eateriesBody{
+    background-color: #FF9900;
+}
+.top-image{
+    width:100%;
+    height: auto;
+}
+.location-container1, .location-container2, .location-container-act{
+    padding:20px;
+    margin-top:20px;
+    justify-content: center;
+    align-items: center;
+    display:block;
+    text-align: center;
+}
+.location-container1{
+    background-color: #FF9900;
+}
+
+.location-container2{
+    background-color: #D3559E;
+    padding-bottom:100px;
+}
+
+
+.locationTitle, .location, .location-title-act{
+  text-align: center;
+    font-size:2rem;
+    font-family: 'Comfortaa', Arial, cursive;
+}
+.location-title-act{
+  color:#ffffff;
+}
+
+.location{
+    color:white;
+}
+
+.location-image{
+    margin-top:10px;
+    width:85%;
+    border:black solid 2px;
+}
+
+.location-text, .location-text-act{
+    font-family: 'Comfortaa', Arial, cursive;
+    font-size:1.5rem;
+    padding:20px 10px;
+    text-align: center;
+}
+.location-text-act{
+  color:rgb(0, 0, 0);
+  background-color: #ffffff42;
+  border-radius: 25px;
+}
+.location-button1, .location-button2{
+     display: block;                
+  width: 90%;                     
+  max-width: 450px;            
+  padding: 30px 0;               
+  margin: 30px auto 0 auto;      
+  background-color: #FFEAC2;     
+  color: black;                  
+  font-family: 'Comfortaa', Arial, cursive;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  border: black solid 2px;                  
+  border-radius: 15px;           
+}
+
+.location-button1{
+      background-color: #FFEAC2;   
+}
+.location-button2{
+      background-color: #EABDFF;    
+}
+
+
+
+/*ACTIVITIES PAGE*/
+.activities-body{
+  background-color: #FB62D7;
+}
+
+/*Collage and text*/
+        /*Top image and background section*/
+    .collage-title {
+  align-items: center;
+  justify-content: center;
+  background-image: url(Images/collageImages.png);
+  background-size:contain;
+  background-position:center;
+  width:100%;
+  height: 30vh;
+  max-height:300px;
+  display: flex;
+  min-height: 100px;                  
+  max-height: 300px;
+  margin: 30px 0px;
+}
+.collage-title h2{
+    background-color: rgba(0, 0, 0, 0.591);
+    color:white;
+    text-align:center;
+    font-size:4vh;
+    padding:15px;
+    margin:10px;
+    font-family: 'Comfortaa', Arial, cursive;
+}
+  
+
+/*Eateries Page 1*/
+.eateriesPage1Body{
+  background-color: #FFC548;
+}
+
+/*Horizontal scroll container*/
+.scroll-container, .scroll-container2 {
+  overflow: auto;
+  white-space: nowrap;
+  padding: 5px;
+  margin:25px 0;
+}
+
+.scroll-container2 {
+background-color: rgba(255, 255, 255, 0.612);
+padding:20px 0;
+}
+
+.scroll-container img {
+  padding: 5px;
+  width: 90%;
+  height: 100%;
+  border: solid rgb(235, 136, 7) 4px;
+}
+
+.scroll-container2 img {
+  padding:15px;
+  width:auto;
+  height:30vh;
+  background-color: #fdd7f8ca;
+  border: rgb(255, 133, 221) solid 3px;
+  margin: 0 5px;
+}
+
+/*List boxes*/
+.listed-info-container, .listed-info-container2 {
+  display: flex;
+  gap:5%;
+  font-size: 4vw;
+  justify-content: center;
+  align-items: center;
+  background-color: #0000005d;
+  padding:25px 0;
+}
+
+.listed-info-container2 {
+background-color: rgba(255, 255, 255, 0.539);
+}
+
+.listed-info-container ul, .listed-info-container2 ul {
+  font-family: 'Comfortaa', Arial, cursive;
+  font-size: 3.5vw;
+  color:white;
+}
+
+.listed-info-container2 ul {
+  color:rgb(0, 0, 0);
+}
+
+/*Text group*/
+.location-link-container{
+  text-align: center;
+  margin:20px 0;
+}
+.location-link {
+  font-size:5vw;
+  font-family: 'Comfortaa', Arial, cursive;
+}
+
+/* Image gallery (overlapping previous settings)*/ 
+.wall-image-box2{
+  border-radius: 0;
+  gap:25%;
+  padding:30px;
+  border:solid black 1px;
+}
+.wall-flex-container2{
+  background-color: #dc9805;
+  border:solid black 2px;
+  margin: 35px 0;
+}
+
+/*EATERIES PAGE 2: Pancake Manor*/
+.eateriesPage2Body{
+  background-color: #FDD7F8;
+}
+/* Image gallery (overlapping previous settings)*/ 
+.wall-image-box3{
+  border-radius: 0;
+  gap:25%;
+  padding:30px;
+  border:solid black 1px;
+}
+.wall-flex-container3{
+  background-color: rgb(255, 133, 221);
+  border:black solid 2px;
+  margin: 35px 0;
+}
+
+/*ACTIVITIES PAGE 1*/
+.activitiesPage1Body{
+  background-color: #61CBF4;
+}
+
+.activity-text{
+background-color: rgba(255, 255, 255, 0.482);
+font-family: 'Comfortaa', Arial, cursive;
+font-size: 2vh;
+width:90%;
+min-height:9vh;
+text-align: center;
+margin:0 auto;
+padding:10px;
+margin-top:15px;
+
+}
+
+/*ACTIVITIES PAGE 2*/
+.activitiesPage2Body{
+background-color: #0B99CF;
+}
+
+/*About me Page*/
+.aboutBody{
+  background-color: #C2F1C8;
+}
+
+.about-headings, .contact-form-heading{
+  color:white;
+  background-color: #7DC469;
+  font-family: 'Comfortaa', Arial, cursive;
+  text-align: center;
+  min-height:5vh;
+  font-size:3vh;
+  margin:0;
+  padding-top:15px;
+}
+
+/*Social media listings*/
+.socials-container {
+  display: flex;
+  align-items: center;
+  max-width:100%;
+  justify-content: space-around;
+  width:100%;
+}
+
+.socials-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.socials-text h3 {
+  font-family: 'Comfortaa', Arial, cursive;
+  font-size: 2.5rem;
+  margin:0 0 5px 25px;
+}
+
+.socials-text ul {
+  font-family: 'Comfortaa', Arial, cursive;
+  display: block;
+  max-width:60%;
+font-size: 1.5rem;
+  margin: 0 0 20px 20px;
+}
+
+.socials-text ul li{
+  margin:10px 0;
+}
+
+.socials-photo {
+  width: 20%;
+  height:4vh;
+  margin: 10px 0px;
+  height: auto;
+}
+
+/*CONTACT FORM*/
+.contact-form-heading{
+  margin-top:25px;
+}
+.contact-section {
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  text-align: left;     
+  width: 100%;
+  margin-bottom:30px;
+}
+
+/*Label and input box*/
+.form-group {
+  width: 90%;           
+  max-width: 700px;     
+  margin: 15px 15px 20px 0;
+}
+
+/* label text */
+.form-heading {
+  color: rgb(23, 107, 40);
+  font-size: 2rem;
+  margin: 5px 0 8px 0;
+  display: block;
+  font-family: 'Chalkduster', cursive;
+}
+
+/* red asterisk */
+.apostrophe {
+  color: red;
+  font-size: 28px;
+}
+
+/* blue input boxes */
+.input-box,
+.message-box {
+  display: block;
+  width: 100%;           /* fills its .form-group width */
+  background-color: #b8ff97;
+  border-radius: 10px;
+  padding: 8px;
+  border: rgb(7, 110, 39) solid 1px;
+}
+
+.input-box { height: 55px; }
+.message-box { height: 120px; }
+
+/* submit button */
+.Submit-Form {
+
+  max-width: 400px;
+  border: 2px solid black;
+  background-color: #b99f06;
+  border-radius: 20px;
+  margin: 30px 0 15px;
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  font-family: 'Chalkduster', cursive;
+  text-align: center;
+}
+
+/*About me section*/
+.about-me-container{
+  background-color: #D1549E;
+  padding:5px 15px 150px 0;
+
+}
+
+.about-me-image{
+  width:100%;
+  height:auto;
+}
+
+/*FOOTER */
+.direct-top {
+  text-align: center;
+  font-size: 4vh;
+  display: block;
+  height: 25%;
+  background-color: #F88ABF;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  font-family: 'Comfortaa', Arial, cursive;
+}
+
+
+/*Footer-Container */
+.footer-image {
+  width: 100%;
+  height: 50%;
+}
+
+.footer-container {
+  background-color: #353131;
+    align-items: center;   
+  justify-content: center;
+}
+
+.footer-bottom-container p {
+  color: White;
+  font-family: 'Comfortaa', Arial, cursive;
+  text-align: center;
+  padding: 15px;
+  margin: 0;
+  font-size: 2vh;
+}
+
+.footer-logos {
+  width: 85%;
+  height: auto;
+   margin: 0 auto;
+   display:block;
+}
