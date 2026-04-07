@@ -235,7 +235,8 @@ background-color: #D0559E;
 
 @media (min-width: 768px) {
   .top-image {
-    max-height: 3000px;   /* adjust this value */
+    max-height: 2000px;   /* adjust this value */
+    max-width:2000px;
     width: 70%;
     height: auto;
     display: block; 
