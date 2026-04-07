@@ -232,6 +232,16 @@ background-color: #D0559E;
     width:100%;
     height: auto;
 }
+
+@media (min-width: 768px) {
+  .top-image {
+    max-height: 3000px;   /* adjust this value */
+    width: 70%;
+    height: auto;
+    display: block; 
+    
+  }
+}
 .location-container1, .location-container2, .location-container-act{
     padding:20px;
     margin-top:20px;
