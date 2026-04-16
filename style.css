@@ -2,7 +2,15 @@
 body{
     margin:0;
     padding:0;
+    
 }
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  border: 5px solid black;
+}
+
 .indexBody{
     background-color: #F15584;
 }
@@ -26,8 +34,9 @@ body{
     justify-content: center;
 }
 .navImage{
-    width: 100%;               
-  max-width: 200px;          
+  width: 100%;               
+  max-width: 150px;  
+  max-height:100px;        
   height: auto;              
   object-fit: contain;
 }
@@ -63,14 +72,16 @@ body{
     .indexTopImage{
         width:100%;
         height:auto;
+        max-height:350px;
         display:block;
         object-fit:cover;
         margin:15px 0;
     }
     .imageDivider, .imageDivider2 {
         width:100%;
+        height:auto;
+        max-height:50px;
         display:block;
-        object-fit:cover;
     }
 
     .imageDivider2 {
@@ -93,14 +104,13 @@ body{
     }
     .indexText{
         text-align: center;
-        font-size: 3vh;
-        font-size:5vw;
+        font-size: 1rem;
         font-family: 'Comfortaa', Arial, cursive;
         padding: 15px;
     }
     h1{
         font-family: 'Comfortaa', Arial, cursive;
-        font-size: 2rem;
+        font-size: 1rem;
         text-align: center;
         padding:10px;
         width:90%;
@@ -128,7 +138,7 @@ body{
     background-color: rgba(0, 0, 0, 0.591);
     color:white;
     text-align:center;
-    font-size:3vh;
+    font-size:1rem;
     margin:10px;
     font-family: 'Comfortaa', Arial, cursive;
 }
@@ -157,6 +167,8 @@ body{
   border-radius: 10px;
   box-sizing: border-box;
    overflow: hidden;
+    max-width:200px;
+    max-height:200px;
 }
 
 @media (max-width: 800px) {
@@ -174,6 +186,8 @@ body{
  width: 350px;
   height:350px;
  object-fit: cover;
+ max-width:200px;
+  max-height:200px;
 }
 
 /*Directory Buttons - eateries and activities*/
@@ -196,6 +210,8 @@ body{
   border: solid black 4px; 
   width:90%;
   gap: 25px;
+  max-height:75px;
+  max-width:400px;
 }
 .index-button1{
 background-color: #FAB832;
@@ -208,15 +224,16 @@ background-color: #D0559E;
 
 /* Note the dot — you missed it before */
 .index-button-image {
-  width: 150px;
-  height: 130px;
+  width: 100px;
+  height: auto;
+  max-height:80px;
+  max-width:100px;
 }
 
 .index-button1 h3, .index-button2 h3  {
   color: white;
   margin: 0;
-  font-size: 4vh;
-  font-size: 5vw;
+  font-size: 1.5rem;
   font-family: 'Comfortaa', Arial, cursive;
   word-wrap: break-word;
   text-align: center;
@@ -228,19 +245,24 @@ background-color: #D0559E;
 .eateriesBody{
     background-color: #FF9900;
 }
-.top-image{
+.top-image, .top-image2{
     width:100%;
     height: auto;
 }
 
-@media (min-width: 768px) {
-  .top-image {
-    max-height: 2000px;   /* adjust this value */
-    max-width:2000px;
-    width: 70%;
+  .top-image, .top-image2 {
+    max-height: 600px;   /* adjust this value */
     height: auto;
     display: block; 
-    
+  }
+
+  @media (min-width: 768px) {
+  .top-image {
+    width: 65%;
+  }
+
+  .top-image2{
+    max-height:300px;
   }
 }
 .location-container1, .location-container2, .location-container-act{
@@ -263,7 +285,7 @@ background-color: #D0559E;
 
 .locationTitle, .location, .location-title-act{
   text-align: center;
-    font-size:2rem;
+    font-size:1rem;
     font-family: 'Comfortaa', Arial, cursive;
 }
 .location-title-act{
@@ -276,13 +298,15 @@ background-color: #D0559E;
 
 .location-image{
     margin-top:10px;
+    max-height:300px;
+    max-width:500px;
     width:85%;
     border:black solid 2px;
 }
 
 .location-text, .location-text-act{
     font-family: 'Comfortaa', Arial, cursive;
-    font-size:1.5rem;
+    font-size:1rem;
     padding:20px 10px;
     text-align: center;
 }
@@ -292,15 +316,16 @@ background-color: #D0559E;
   border-radius: 25px;
 }
 .location-button1, .location-button2{
-     display: block;                
-  width: 90%;                     
-  max-width: 450px;            
-  padding: 30px 0;               
+  display: block;                
+  width: 90%;             
+  max-width: 150px;   
+  max-height: 50px;
+  padding: 15px 5px;               
   margin: 30px auto 0 auto;      
   background-color: #FFEAC2;     
   color: black;                  
   font-family: 'Comfortaa', Arial, cursive;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: bold;
   text-align: center;
   border: black solid 2px;                  
@@ -359,6 +384,7 @@ background-color: #D0559E;
   white-space: nowrap;
   padding: 5px;
   margin:25px 0;
+
 }
 
 .scroll-container2 {
@@ -370,6 +396,8 @@ padding:20px 0;
   padding: 5px;
   width: 90%;
   height: 100%;
+  max-height:300px;
+  max-width:400px;
   border: solid rgb(235, 136, 7) 4px;
 }
 
@@ -377,6 +405,8 @@ padding:20px 0;
   padding:15px;
   width:auto;
   height:30vh;
+  max-height:300px;
+  max-width:400px;
   background-color: #fdd7f8ca;
   border: rgb(255, 133, 221) solid 3px;
   margin: 0 5px;
@@ -386,7 +416,6 @@ padding:20px 0;
 .listed-info-container, .listed-info-container2 {
   display: flex;
   gap:5%;
-  font-size: 4vw;
   justify-content: center;
   align-items: center;
   background-color: #0000005d;
@@ -399,7 +428,7 @@ background-color: rgba(255, 255, 255, 0.539);
 
 .listed-info-container ul, .listed-info-container2 ul {
   font-family: 'Comfortaa', Arial, cursive;
-  font-size: 3.5vw;
+  font-size: 1rem;
   color:white;
 }
 
@@ -413,21 +442,22 @@ background-color: rgba(255, 255, 255, 0.539);
   margin:20px 0;
 }
 .location-link {
-  font-size:5vw;
+  font-size:1rem;
   font-family: 'Comfortaa', Arial, cursive;
 }
 
 /* Image gallery (overlapping previous settings)*/ 
-.wall-image-box2{
-  border-radius: 0;
-  gap:25%;
-  padding:30px;
-  border:solid black 1px;
+.wall-image-box2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 .wall-flex-container2{
   background-color: #dc9805;
   border:solid black 2px;
   margin: 35px 0;
+  
 }
 
 /*EATERIES PAGE 2: Pancake Manor*/
@@ -436,10 +466,12 @@ background-color: rgba(255, 255, 255, 0.539);
 }
 /* Image gallery (overlapping previous settings)*/ 
 .wall-image-box3{
-  border-radius: 0;
-  gap:25%;
-  padding:30px;
-  border:solid black 1px;
+ .wall-image-box2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 }
 .wall-flex-container3{
   background-color: rgb(255, 133, 221);
@@ -503,7 +535,7 @@ background-color: #0B99CF;
 
 .socials-text h3 {
   font-family: 'Comfortaa', Arial, cursive;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   margin:0 0 5px 25px;
 }
 
@@ -524,6 +556,8 @@ font-size: 1.5rem;
   height:4vh;
   margin: 10px 0px;
   height: auto;
+  max-height:250px;
+  max-width:100px;
 }
 
 /*CONTACT FORM*/
@@ -550,7 +584,7 @@ font-size: 1.5rem;
 /* label text */
 .form-heading {
   color: rgb(23, 107, 40);
-  font-size: 2rem;
+  font-size: 1rem;
   margin: 5px 0 8px 0;
   display: block;
   font-family: 'Chalkduster', cursive;
@@ -578,14 +612,13 @@ font-size: 1.5rem;
 
 /* submit button */
 .Submit-Form {
-
   max-width: 400px;
   border: 2px solid black;
   background-color: #b99f06;
   border-radius: 20px;
   margin: 30px 0 15px;
   color: white;
-  font-size: 30px;
+  font-size: 1rem;
   padding: 10px;
   font-family: 'Chalkduster', cursive;
   text-align: center;
@@ -601,12 +634,14 @@ font-size: 1.5rem;
 .about-me-image{
   width:100%;
   height:auto;
+  max-width:500px;
+   
 }
 
 /*FOOTER */
 .direct-top {
   text-align: center;
-  font-size: 4vh;
+  font-size: 1rem;
   display: block;
   height: 25%;
   background-color: #F88ABF;
@@ -620,6 +655,7 @@ font-size: 1.5rem;
 .footer-image {
   width: 100%;
   height: 50%;
+  max-height:275px;
 }
 
 .footer-container {
@@ -634,7 +670,7 @@ font-size: 1.5rem;
   text-align: center;
   padding: 15px;
   margin: 0;
-  font-size: 2vh;
+  font-size: 1rem;
 }
 
 .footer-logos {
@@ -642,4 +678,6 @@ font-size: 1.5rem;
   height: auto;
    margin: 0 auto;
    display:block;
+   max-height:75px;
+  max-width:400px;
 }
