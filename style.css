@@ -43,7 +43,7 @@ body{
 
 .navButtons h2 {
     color: white;             /* white text */
-    font-size: 1rem;          /* adjust size as needed */
+    font-size: 2rem;          /* adjust size as needed */
     margin-top: 8px;          /* small space between image and text */
     text-align: center;
     font-family: 'Comfortaa', sans-serif; /* matches site font */
@@ -115,13 +115,13 @@ body{
     }
     .indexText{
         text-align: center;
-        font-size: 1rem;
+        font-size: 2rem;
         font-family: 'Comfortaa', Arial, cursive;
         padding: 15px;
     }
     h1{
         font-family: 'Comfortaa', Arial, cursive;
-        font-size: 1rem;
+        font-size: 2rem;
         text-align: center;
         padding:10px;
         width:90%;
@@ -149,7 +149,7 @@ body{
     background-color: rgba(0, 0, 0, 0.591);
     color:white;
     text-align:center;
-    font-size:1rem;
+    font-size:2.5rem;
     margin:10px;
     font-family: 'Comfortaa', Arial, cursive;
 }
@@ -209,7 +209,7 @@ body{
   padding: 20px;
   width: 90%;
   flex-wrap: wrap;
-  margin: 0 auto;
+  margin: 30px auto;
 }
 
 .index-button1, .index-button2 {
@@ -244,7 +244,7 @@ background-color: #D0559E;
 .index-button1 h3, .index-button2 h3  {
   color: white;
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-family: 'Comfortaa', Arial, cursive;
   word-wrap: break-word;
   text-align: center;
@@ -296,7 +296,7 @@ background-color: #D0559E;
 
 .locationTitle, .location, .location-title-act{
   text-align: center;
-    font-size:1.5rem;
+    font-size:2.5rem;
     font-family: 'Comfortaa', Arial, cursive;
 }
 .location-title-act{
@@ -317,7 +317,7 @@ background-color: #D0559E;
 
 .location-text, .location-text-act{
     font-family: 'Comfortaa', Arial, cursive;
-    font-size:1rem;
+    font-size:2rem;
     padding:20px 10px;
     text-align: center;
 }
@@ -336,7 +336,7 @@ background-color: #D0559E;
   background-color: #FFEAC2;     
   color: black;                  
   font-family: 'Comfortaa', Arial, cursive;
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: bold;
   text-align: center;
   border: black solid 2px;                  
@@ -439,7 +439,7 @@ background-color: rgba(255, 255, 255, 0.539);
 
 .listed-info-container ul, .listed-info-container2 ul {
   font-family: 'Comfortaa', Arial, cursive;
-  font-size: 1rem;
+  font-size: 2rem;
   color:white;
 }
 
@@ -453,7 +453,7 @@ background-color: rgba(255, 255, 255, 0.539);
   margin:20px 0;
 }
 .location-link {
-  font-size:1rem;
+  font-size:2rem;
   font-family: 'Comfortaa', Arial, cursive;
 }
 
@@ -546,7 +546,7 @@ background-color: #0B99CF;
 
 .socials-text h3 {
   font-family: 'Comfortaa', Arial, cursive;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin:0 0 5px 25px;
 }
 
@@ -554,7 +554,7 @@ background-color: #0B99CF;
   font-family: 'Comfortaa', Arial, cursive;
   display: block;
   max-width:60%;
-font-size: 1.5rem;
+font-size: 2rem;
   margin: 0 0 20px 20px;
 }
 
@@ -595,7 +595,7 @@ font-size: 1.5rem;
 /* label text */
 .form-heading {
   color: rgb(23, 107, 40);
-  font-size: 1rem;
+  font-size: 2.5rem;
   margin: 5px 0 8px 0;
   display: block;
   font-family: 'Chalkduster', cursive;
@@ -629,7 +629,7 @@ font-size: 1.5rem;
   border-radius: 20px;
   margin: 30px 0 15px;
   color: white;
-  font-size: 1rem;
+  font-size: 2.5rem;
   padding: 10px;
   font-family: 'Chalkduster', cursive;
   text-align: center;
@@ -652,7 +652,7 @@ font-size: 1.5rem;
 /*FOOTER */
 .direct-top {
   text-align: center;
-  font-size: 1rem;
+  font-size: 2rem;
   display: block;
   height: 25%;
   background-color: #F88ABF;
@@ -681,7 +681,7 @@ font-size: 1.5rem;
   text-align: center;
   padding: 15px;
   margin: 0;
-  font-size: 1rem;
+  font-size: 2rem;
 }
 
 .footer-logos {
